@@ -3,7 +3,7 @@ import random;
 import from byllm.llm { Model }
 
 
- glob llm = Model(model_name="gemini-1.5-pro", api_key="AIzaSyB8Ky1kiH-1GfU4TP6zzAwsM5hav7FqR_M", verbose=False);
+ glob llm = Model(model_name="gemini-1.5-pro", api_key="", verbose=False);
 
  # Give hint 
 def give_hint(guess: int, correct_number: int) -> str by llm();
@@ -26,4 +26,5 @@ node turn {
     root spawn GuessGame(5);
     root spawn GuessGame(6);
     root spawn GuessGame(7);
+
 }
