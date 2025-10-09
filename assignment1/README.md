@@ -38,7 +38,7 @@ jac run loyalty_advisor.jac
 ```
 
 The app includes three sample customers demonstrating different loyalty tiers:
-- Alice Wambui (Silver tier)
+- Alice Kamau (Silver tier)
 - Bob Kioko (Bronze tier)
 - Carol Wamalwa (Gold tier)
 
@@ -68,5 +68,6 @@ The app follows the walker-node pattern:
 - byllm library for LLM integration
 - API access to Google Gemini (or alternative LLM model)
 - Environment variables configured (if needed for API keys)
+
 
 
