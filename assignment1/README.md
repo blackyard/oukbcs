@@ -4,7 +4,7 @@ A Jac-based application that analyzes customer behavior and provides personalize
 
 ## Overview
 
-The Customer Loyalty Advisor app is built following the same architecture pattern as the guess_game6 implementation. It uses walkers, nodes, and LLM integration to analyze customer data and generate intelligent recommendations.
+The Customer Loyalty Advisor app uses walkers, nodes, and LLM integration to analyze customer data and generate intelligent recommendations.
 
 ## Features
 
@@ -69,32 +69,3 @@ The app follows the walker-node pattern:
 - API access to Google Gemini (or alternative LLM model)
 - Environment variables configured (if needed for API keys)
 
-## Example Output
-
-```
-============================================================
-CUSTOMER LOYALTY ANALYSIS
-============================================================
-Customer: Alice Johnson
-Total Purchases: 15
-Average Spend: $75.5
-Days Since Last Visit: 5
-Current Tier: Silver
-------------------------------------------------------------
-
-PERSONALIZED ADVICE:
-[AI-generated personalized recommendations...]
-
-RECOMMENDED REWARDS:
-[AI-generated reward suggestions...]
-============================================================
-```
-
-## Next Steps
-
-Potential enhancements:
-- Add database integration for real customer data
-- Create a web interface using Streamlit (similar to app.jac)
-- Implement email notification system for personalized offers
-- Add analytics dashboard for business insights
-- Create batch processing for large customer databases
