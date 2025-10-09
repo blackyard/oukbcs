@@ -26,7 +26,7 @@ impl LoyaltyAdvisor.analyze_loyalty {
         }
         
         # Display customer information
-        print(f"\n{'='*60}");
+        print(f"{'='*60}");
         print(f"CUSTOMER LOYALTY ANALYSIS");
         print(f"{'='*60}");
         print(f"Customer: {self.customer_name}");
@@ -43,15 +43,15 @@ impl LoyaltyAdvisor.analyze_loyalty {
             self.avg_spend, 
             self.last_visit_days
         );
-        print(f"\nPERSONALIZED ADVICE:");
+        print(f"PERSONALIZED ADVICE:");
         print(advice);
         
         # Get reward suggestions
         customer_history = f"Purchases: {self.purchases}, Avg Spend: KES {round(self.avg_spend, 2)}, Last Visit: {self.last_visit_days} days ago";
         rewards = suggest_rewards(current_tier, customer_history);
-        print(f"\nRECOMMENDED REWARDS:");
+        print(f"RECOMMENDED REWARDS:");
         print(rewards);
-        print(f"{'='*60}\n");
+        print(f"{'='*60}");
         
         # Create a new profile node with updated tier
         here ++> customer_profile(current_tier, here.tier_threshold);
